@@ -1,0 +1,64 @@
+$color-1: #0078A5;
+$color-2: #0098B6;
+$color-3: #00B7B2;
+$color-4: #42D39D;
+$color-5: #A0E982;
+$color-6: #F9F871;
+
+$color-redness: #CF0554;
+$color-blueness: #0605CF;
+$color-greeness: #26BE83;
+
+$color-orangenesss: rgb(252, 192, 80);
+$color-text-gray: #B1B1B1;
+$color-text-default: black;
+$color-text-witheness: #FAFAFA;
+
+$color-selection: $color-6;
+
+:root {
+  --color-1: $color-1;
+  --color-2: $color-2;
+  --color-3: $color-3;
+}
+.text-primary {
+  color: $color-blueness;
+}
+.bg-primary {
+  background-color: $color-blueness;
+}
+
+.text-success {
+  color: $color-greeness;
+}
+.bg-success {
+  background-color: $color-greeness;
+  color: $color-text-witheness;
+}
+.text-info {
+  color: $color-blueness;
+}
+.bg-info {
+  background-color: $color-blueness;
+  color: $color-text-witheness;
+}
+.text-danger {
+  color: $color-redness;
+}
+.bg-danger {
+  background-color: $color-redness;
+}
+.text-warning {
+  color: $color-orangenesss;
+}
+.bg-warning {
+  background-color: $color-orangenesss;
+  color: $color-text-witheness;
+}
+.text-normal {
+  color: $color-text-default;
+}
+
+.button-small {
+  padding: 0.5rem 0.75rem;
+}

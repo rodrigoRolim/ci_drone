@@ -1,0 +1,27 @@
+/* statuses */
+.component::selection {
+  background-color: $color-selection;
+}
+.component:hover {
+  cursor: pointer;
+  background-color: $color-text-gray;
+}
+.tab-component {
+  -webkit-tap-highlight-color: $color-orangenesss;
+}
+.component:focus {
+  border-color: $color-6;
+}
+.text-link:visited {
+  $color: $color-3;
+}
+.text-link:link {
+  $color: $color-4
+}
+.text-link--hover:hover {
+  cursor: pointer;
+}
+.component:active {
+  color: $color-4;
+  opacity: 0.8;
+}

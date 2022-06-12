@@ -1,0 +1,12 @@
+@import "./styles.scss";
+
+/* states */
+.input-component::placeholder {
+  color: $color-text-gray;
+}
+.component:disabled {
+  opacity: 0.8;
+}
+.component:enabled {
+  opacity: 1;
+}

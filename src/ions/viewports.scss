@@ -1,0 +1,51 @@
+/* viewports */
+$break-zero: 0px;
+$break-ultra-narrow: 319px;
+$break-extra-narrow: 479px;
+$break-narrow: 480px;
+$break-wide: 960px;
+$break-extra-wide: 1440px;
+$break-ultra-wide: 1920px;
+
+@mixin respond-to($media) {
+  @if $media == ultra-narrow {
+    @media only screen and (max-width: $break-ultra-narrow) {
+      @content;
+    }
+  }
+  @else if $media == extra-narrow {
+    @media only screen and (min-width: ($break-ultra-narrow + 1)) and (max-width: ($break-extra-narrow)) {
+      @content;
+    }
+  }
+
+  @else if $media == narrow {
+    @media only screen and (min-width: ($break-extra-narrow + 1)) and (max-width: ($break-narrow)){
+      @content;
+    }
+  }
+  @else if $media == wide {
+    @media only screen and (min-width: ($break-narrow + 1)) and (max-width: ($break-wide)) {
+      @content;
+    }
+  }
+  @else if $media == extra-wide {
+    @media only screen and (min-width: ($break-wide + 1)) and (max-width: $break-extra-wide) {
+      @content;
+    }
+  }
+  @else if $media == ultra-wide {
+    @media only screen and (min-width: $break-ultra-wide) {
+      @content;
+    }
+  }
+}
+
+@mixin device-orientation($orientation) {
+  @if $orientation != landscape or $orientation != portrait {
+    @warn "Styles: As únicas opcões aceitas são landscape e portrait";
+  }
+  @media(orientation: $orientation) {
+    @content;
+  }
+}

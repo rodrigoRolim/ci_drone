@@ -1,0 +1,21 @@
+/* mode */
+@media screen {}
+@media (hover) {}
+@media (any-hover:hover) {}
+@media (pointer: fine) {}
+@media (any-pointer: fine) {}
+@media (hover:none), (hover:on-demand) {}
+@media (any-hover:none), (any-hover:on-demand) {}
+@media (pointer: coarse) {}
+@media (any-pointer: coarse) {}
+@media print {}
+@media (resolution: xdpi) {}
+@media (min-resolution: xdpi) {}
+@media (max-resolution: xdpi) {}
+@media (color) {}
+@media (min-color: x) {}
+@media (color-gamut: p3) {}
+@media (prefers-contrast: low) {}
+@media (prefers-contrast: high) {}
+@media (monochrome) {}
+@media (display-mode: fullscreen) {}
